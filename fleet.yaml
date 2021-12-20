@@ -1,0 +1,11 @@
+imageScans:
+  - policy:
+      semver:
+        range: "*"
+      alphabetical:
+        order: asc
+    image: "jorgejsilva/nginx-r"
+    tagName: test-scan
+    interval: 1m
+
+    

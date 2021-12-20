@@ -19,4 +19,4 @@ spec:
     spec:
       containers:
         - name: nginx-fleet-pod
-          image: jorgejsilva/nginx-r:1.1
+          image: jorgejsilva/nginx-r:1.1 # {"$imagescan": "test-scan"}

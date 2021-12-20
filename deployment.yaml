@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-fleet
+  labels:
+    app: nginx-fleet
+    dep: git-ops
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx-fleet
+  template:
+    metadata:
+      name: nginx-fleet-pod
+      labels:
+        app: nginx-fleet
+    spec:
+      containers:
+        - name: nginx-fleet-pod
+          image: jorgejsilva/nginx-r:1.0

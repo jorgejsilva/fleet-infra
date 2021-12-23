@@ -12,5 +12,5 @@ patchesStrategicMerge:
 
 images:
   - name: jorgejsilva/nginx-r
-    newName: nginx
-    newTag: latest
+#    newName: nginx
+    newTag: '1.2'

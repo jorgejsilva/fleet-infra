@@ -1,15 +1,15 @@
 resources:
-#  - ../../base
+  - ../../base
   - namespace.yaml
-#namePrefix: predep-
-#namespace: predep
-#commonLabels:
-#  env: predep
-#patches:
-#  - service.yaml
-#  - deployment.yaml
+namePrefix: predep-
+namespace: predep
+commonLabels:
+  env: predep
+patches:
+  - service.yaml
+  - deployment.yaml
 
-#images:
-#  - name: jorgejsilva/nginx-r
-#    newName: nginx
-#    newTag: latest
+images:
+  - name: jorgejsilva/nginx-r
+    newName: nginx
+    newTag: latest

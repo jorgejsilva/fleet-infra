@@ -1,6 +1,6 @@
 resources:
   - ../../base
-namePrefix: default-
+namePrefix: prod-
 commonLabels:
   env: default
 patchesStrategicMerge:

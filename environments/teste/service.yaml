@@ -3,10 +3,9 @@ kind: Service
 metadata:
   name: nginx-fleet-svc
 spec:
-  type: NodePort
   ports:
     - targetPort: 80
       port: 80
-      nodePort: 31081
+      nodePort: 30084
   selector:
-    app: nginx-fleet
+    app: teste-nginx-fleet

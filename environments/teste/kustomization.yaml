@@ -1,0 +1,22 @@
+resources:
+  - ../../base
+namePrefix: teste-
+namespace: teste
+commonLabels:
+  env: teste
+
+patchesStrategicMerge:
+  - service.yaml
+  - container.yaml
+  - deployment.yaml
+  - deploy-labels.yaml
+
+configMapGenerator:
+  - name: nginx-fleet-cmap
+    envs:
+      - configmap.yaml
+  - name: nginx-fleet-cmap2
+    literals:
+      - martinho=Bebabado
+#generatorOptions:
+#  disableNameSuffixHash: true

@@ -5,7 +5,8 @@ namePrefix: predep-
 namespace: predep
 commonLabels:
   env: predep
-patches:
+#patches:
+patchesStrategicMerge:
   - service.yaml
   - deployment.yaml
 

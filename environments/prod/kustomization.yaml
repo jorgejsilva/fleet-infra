@@ -1,0 +1,8 @@
+resources:
+  - ../../base
+namePrefix: default-
+commonLabels:
+  env: default
+patchesStrategicMerge:
+  - service.yaml
+  - deployment.yaml

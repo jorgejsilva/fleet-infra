@@ -7,7 +7,7 @@ metadata:
     app: nginx-fleet
     dep: git-ops
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: nginx-fleet

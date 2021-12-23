@@ -1,0 +1,24 @@
+resources:
+  - ../../base
+  - namespace.yaml
+namePrefix: review-
+namespace: review
+commonLabels:
+  env: review
+
+patchesStrategicMerge:
+  - service.yaml
+  - container.yaml
+  - deployment.yaml
+  - deploy-labels.yaml
+
+configMapGenerator:
+  - name: nginx-fleet-cmap
+    envs:
+      - configmap.yaml
+  - name: nginx-fleet-cmap2
+    literals:
+      - martinho=Bebabado
+images:
+  - name: jorgejsilva/nginx-r
+    newTag: '1.5'

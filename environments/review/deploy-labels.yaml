@@ -1,0 +1,13 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-fleet
+spec:
+  selector:
+    matchLabels:
+      app: review-nginx-fleet
+  template:
+    metadata:
+      name: review-nginx-fleet-pod
+      labels:
+        app: review-nginx-fleet
